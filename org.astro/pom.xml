@@ -21,4 +21,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>multiversion</groupId>
+			<artifactId>multi.version</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
 </project>
