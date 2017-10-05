@@ -1,0 +1,23 @@
+@startuml
+
+package "com.greetings" {
+    class Main
+}
+
+package "org.astro" {
+    class World
+}
+
+package "multi.version" {
+    class MultiVersion
+}
+
+com.greetings -> org.astro
+Main --> World
+
+org.astro -> multi.version : 1.0
+World -> MultiVersion
+
+com.greetings ---> multi.version : 2.0
+
+@enduml
